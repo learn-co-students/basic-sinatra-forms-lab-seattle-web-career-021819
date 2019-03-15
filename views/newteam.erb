@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="UTF-8">
-  <title>Basketball Team Signup</title>
- </head>
- <body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Basketball Team Signup</title>
+  </head>
+  <body>
+    <h2>Create a Basketball Team!</h2>
+    <!-- step 2: renders basketball team form -->
+    <!-- form's action="/team" sends results to team page, removes Sinatra error page for /team
+    </section> -->
+    <form action="/team" method="POST">
+      <div>
+        <label for="POST-name">Name:</label>
+        <!-- field from which result is displayed on /team -->
+        <input id="POST-name" type="text" name="name"><br>
+
+        <label for="POST-coach">Coach:</label>
+        <input id="POST-coach" type="text" name="coach"><br>
+
+        <label for="POST-pg">PG:</label>
+        <input id="POST-pg" type="text" name="pg"><br>
+
+        <label for="POST-sg">SG:</label>
+        <input id="POST-sg" type="text" name="sg"><br>
+
+        <label for="POST-sf">SF:</label>
+        <input id="POST-sf" type="text" name="sf"><br>
+
+        <label for="POST-pf">PF:</label>
+        <input id="POST-pf" type="text" name="pf"><br>
+
+        <label for="POST-c">C:</label>
+        <input id="POST-c" type="text" name="c"><br>
+
+        <input type="submit" id="Submit">
+      </div>
+    </form>
  </body>
 </html>
-
-
